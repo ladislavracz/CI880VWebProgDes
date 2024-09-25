@@ -1,0 +1,9 @@
+git status:			show modified files in working directory, staged for your next commit
+git add CI880V_0923/*.*	:	
+git add . :			add a file as it looks now to your next commit (stage)
+
+git commit -m "2.pract":		commit your staged content as a new commit snapshot
+git clone [url]		:	retrieve an entire repository from a hosted location via URL
+git init:			initialize an existing directory as a Git repository
+git push:			push the comitted changes to the repository	
+git pull:			download the newest version of the repository
