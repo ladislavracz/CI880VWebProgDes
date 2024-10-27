@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text-with-image {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.float-image {
+    width: 150px;
+    height: auto;
+    margin-right: 10px;
+    border: 2px solid red; /* Red border around the image */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.center-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.center-image img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
+
+.credit {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: gray;
+    font-style: italic;
+}
