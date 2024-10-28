@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display block</title>
+    <style>
+        body {
+            background-color: #ffff00;
+            font-size: 120%;
+        }
+
+        p {
+            color: rgb(132, 0, 255);
+        }
+
+        p.rl1 {
+            display: none;
+        }
+
+        p.rl2 {
+            display: inline;
+            font-size: 150%;
+        }
+
+        p.rl3 {
+            display: block;
+            font-size: 150%;
+        }
+
+        p.rl4 {
+            display: inline-block;
+            font-size: 150%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>A negjelenítés tulajdonságai</h1>
+    <h2>display:none</h2>
+    <div>
+        Az adat a számítógép által tárolt és feldolgozható jelsorozat.... <p class="rl1">ADAT - INFORMÁCIÓ!</p> Az
+        információ latin eredetű szó: felvilágosodás, tájékoztatás, hírközlés, tudósítás etc.
+    </div>
+    <h2>display:inline</h2>
+    <div>
+        Az adat a számítógép által tárolt és feldolgozható jelsorozat.... <p class="rl2">ADAT - INFORMÁCIÓ!</p> Az
+        információ latin eredetű szó: felvilágosodás, tájékoztatás, hírközlés, tudósítás etc.
+    </div>
+    <h2>display:block</h2>
+    <div>
+        Az adat a számítógép által tárolt és feldolgozható jelsorozat.... <p class="rl3">ADAT - INFORMÁCIÓ!</p> Az
+        információ latin eredetű szó: felvilágosodás, tájékoztatás, hírközlés, tudósítás etc.
+    </div>
+    <h2>display:inline-block</h2>
+    <div>
+        Az adat a számítógép által tárolt és feldolgozható jelsorozat.... <p class="rl4">ADAT - INFORMÁCIÓ!</p> Az
+        információ latin eredetű szó: felvilágosodás, tájékoztatás, hírközlés, tudósítás etc.
+    </div>
+</body>
+
+</html>
