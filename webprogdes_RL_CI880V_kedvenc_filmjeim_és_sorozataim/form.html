@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        button {
+            display: block;
+            width: 100%;
+            background: #007BFF;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-bottom: 1rem;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Kapcsolatfelvételi Űrlap</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="about.html">Bemutatkozás</a></li>
+                <li><a href="gallery.html">Galéria</a></li>
+                <li><a href="form.html">Űrlap</a></li>
+                <li><a href="video.html">Videó</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="#" method="POST" class="form-container">
+            <h2>Kapcsolatfelvétel</h2>
+
+            <!-- Szöveges mező -->
+            <label for="name">Név:</label>
+            <input type="text" id="name" name="name" placeholder="Írja be a nevét">
+
+            <!-- Többsoros szöveges mező -->
+            <label for="message">Üzenet:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Írja be az üzenetét"></textarea>
+
+            <!-- Adatlista -->
+            <label for="favorite-film">Kedvenc film:</label>
+            <input list="films" id="favorite-film" name="favorite-film" placeholder="Válasszon vagy írjon be">
+            <datalist id="films">
+                <option value="Star Wars"></option>
+                <option value="Harry Potter"></option>
+                <option value="Lord of the Rings"></option>
+                <option value="The Matrix"></option>
+            </datalist>
+
+            <!-- Jelölőnégyzet -->
+            <label>Hírlevél:</label>
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Feliratkozás hírlevélre</label>
+
+            <!-- Rádiógomb -->
+            <label>Kedvenc műfaj:</label>
+            <div>
+                <input type="radio" id="action" name="genre" value="action">
+                <label for="action">Akció</label>
+            </div>
+            <div>
+                <input type="radio" id="comedy" name="genre" value="comedy">
+                <label for="comedy">Vígjáték</label>
+            </div>
+            <div>
+                <input type="radio" id="drama" name="genre" value="drama">
+                <label for="drama">Dráma</label>
+            </div>
+
+            <!-- Színválasztó -->
+            <label for="color">Kedvenc szín:</label>
+            <input type="color" id="color" name="color">
+
+            <!-- Dátumválasztás -->
+            <label for="date">Találkozó dátuma:</label>
+            <input type="date" id="date" name="date">
+
+            <!-- Gombok -->
+            <button type="submit">Küldés</button>
+            <button type="reset">Alaphelyzet</button>
+
+            <!-- Számozott lista -->
+            <ol>
+                <li>Töltse ki az űrlapot.</li>
+                <li>Ellenőrizze az adatait.</li>
+                <li>Kattintson a "Küldés" gombra.</li>
+            </ol>
+        </form>
+    </main>
+
+    <footer>
+        <p>2024 Kedvenc Filmjeim és Sorozataim.</p>
+        <p>Készítette: Rácz László, Neptun-kód: CI880V</p>
+    </footer>
+</body>
+
+</html>

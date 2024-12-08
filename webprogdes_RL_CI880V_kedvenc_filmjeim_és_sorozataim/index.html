@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kedvenc filmjeim és sorozataim bemutatása.">
+    <title>Kedvenc Filmjeim és Sorozataim</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        aside, section, article {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 10px;
+    }
+
+    aside:hover, section:hover, article:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    }
+
+    aside {
+        background-image: url('images/streaming_platforms.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 20px;
+        color: white;
+        max-width: 800px;
+    }
+
+    aside ul {
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        padding: 15px;
+        margin: 10px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        list-style: none;
+    }
+
+    section {
+        background-image: url('images/cimema.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 20px;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    article {
+        background-color: #607178;
+        padding: 20px;
+        color: white;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    article img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+    }
+
+    main {
+        background-image: url('images/universe.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    aside h3, section h2, article h3 {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    aside h3 {
+        color: rgb(52, 52, 64);
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Kedvenc Filmjeim és Sorozataim</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="about.html">Bemutatkozás</a></li>
+                <li><a href="gallery.html">Galéria</a></li>
+                <li><a href="form.html">Űrlap</a></li>
+                <li><a href="video.html">Videó</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 style="color: #607178;">Üdvözöllek az oldalamon!</h2>
+            <p>Ezen az oldalon megosztom veled kedvenc filmjeimet és sorozataimat. Böngészd végig az aloldalakat, és
+                fedezd fel, melyek azok a produkciók, amelyek igazán közel állnak a szívemhez!</p>
+        </section>
+
+        <article style="background-color: #607178;">
+            <h3 style=" font-size: 25px;">Kiemelt filmem</h3>
+            <p><strong>Interstellar (2014):</strong> Egy lenyűgöző sci-fi Christopher Nolan rendezésében, amely az
+                emberiség túlélésének lehetőségeit kutatja a világűr határain túl.</p>
+            <img src="images/interstellar.jpg" alt="Interstellar jelenet" style="width:100%; max-width:600px;">
+        </article>
+
+        <aside>
+            <h3 style=" font-size: 25px;">Gyors linkek</h3>
+            <ul>
+                <li><a href="https://www.imdb.com/">IMDb</a></li>
+                <li><a href="https://www.netflix.com/">Netflix</a></li>
+                <li><a href="https://www.primevideo.com/">Amazon Prime Video</a></li>
+                <li><a href="https://www.hulu.com/">Hulu</a></li>
+                <li><a href="https://www.hbomax.com/">HBO Max</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>2024 Kedvenc Filmjeim és Sorozataim</p>
+        <p>Készítette: Rácz László, Neptun-kód: CI880V</p>
+    </footer>
+</body>
+
+</html>

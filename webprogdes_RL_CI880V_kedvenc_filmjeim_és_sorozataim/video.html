@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videó</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .grid {
+            margin-top: 2rem;
+            margin-left: 60px;
+            display: grid;
+            justify-content: center;
+            align-items: center;    
+            grid-template-columns: 3fr 3fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 1rem;
+            width: 40rem;
+            margin-bottom: 20px;
+        }
+        .videoplayer{
+            margin-left: 430px
+        }
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+       
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Kedvenc Filmjeim és Sorozataim</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="about.html">Bemutatkozás</a></li>
+                <li><a href="gallery.html">Galéria</a></li>
+                <li><a href="form.html">Űrlap</a></li>
+                <li><a href="video.html">Videó</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="videoplayer">
+        <main>
+            <video id="myVideo" width="600" controls>
+                <source src="videos/dune.mp4" type="video/mp4">
+            </video>
+            <br>
+            <div class="grid">
+                <div>
+                    <button class="material-symbols-outlined" id="start"><span class="material-symbols-outlined">
+                            play_arrow
+                        </span></button>
+                    <button class="material-symbols-outlined" id="stop"><span class="material-symbols-outlined">
+                            pause_circle
+                        </span></button>
+    
+                </div>
+                <div>
+                    <button class="material-symbols-outlined" id="startstop">play_pause</button>
+                </div>
+                <div>
+                    <button class="material-symbols-outlined" id="mute">volume_off</button>
+                    <button class="material-symbols-outlined" id="quiet">volume_down</button>
+                    <button class="material-symbols-outlined" id="loud">volume_up</button>
+                </div>
+                <div>
+                    <button class="material-symbols-outlined" id="veryslow">speed_0_5</button>
+                    <button class="material-symbols-outlined" id="slow">speed_0_75</button>
+                    <button class="material-symbols-outlined" id="normal">speed</button>
+                    <button class="material-symbols-outlined" id="fast">speed_1_25</button>
+                    <button class="material-symbols-outlined" id="veryfast">speed_1_5</button>
+                </div>
+                <div>
+                    <button class="material-symbols-outlined" id="small">zoom_out</button>
+                    <button class="material-symbols-outlined" id="normalise">aspect_ratio</button>
+                    <button class="material-symbols-outlined" id="big">zoom_in</button>
+                </div>
+                <div>
+                    <button class="material-symbols-outlined" id="hasitended">info</button>
+                    <button class="material-symbols-outlined" id="length">timer_pause</button>
+                    <button class="material-symbols-outlined" id="currently">timer</button>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+        <footer>
+            <p>2024 Kedvenc Filmjeim és Sorozataim</p>
+            <p>Készítette: Rácz László, Neptun-kód: CI880V</p>
+        </footer>
+        </main>
+       
+    <script>
+        let btnClick = (id, onclick) => document.getElementById(id).addEventListener("click", onclick);
+        let video = document.querySelector("video");
+        btnClick("start", () => video.play());
+        btnClick("stop", () => video.pause());
+        btnClick("startstop", () => video.paused ? video.play() : video.pause());
+
+        btnClick("mute", () => video.volume = 0);
+        btnClick("quiet", () => video.volume = 0.5);
+        btnClick("loud", () => video.volume = 1);
+
+        btnClick("veryslow", () => video.playbackRate = 0.5);
+        btnClick("slow", () => video.playbackRate = 0.75);
+        btnClick("normal", () => video.playbackRate = 1);
+        btnClick("fast", () => video.playbackRate = 1.25);
+        btnClick("veryfast", () => video.playbackRate = 1.5);
+
+        btnClick("small", () => video.width = 400);
+        btnClick("normalise", () => video.width = 600);
+        btnClick("big", () => video.width = 800);
+
+        btnClick("hasitended", () => alert(video.ended));
+        btnClick("length", () => alert(video.duration));
+        btnClick("currently", () => alert(video.currentTime));
+
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</body>
+
+</html>

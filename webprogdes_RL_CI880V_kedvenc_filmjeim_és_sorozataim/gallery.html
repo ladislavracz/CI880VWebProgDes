@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galéria</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            background-color: #1d3b7280;
+        }
+
+        footer {
+            background: hsl(220, 68%, 6%);
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    }
+    </style>
+</head>
+
+<body
+    style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; line-height: 1.6;">
+
+    <header style="background: hsl(220, 68%, 6%);;; color: white; padding: 1rem 0; text-align: center;">
+        <h1 style="margin: 0; font-size: 2.5rem;">Galéria</h1>
+        <nav>
+            <ul style="list-style: none; padding: 0; margin: 1rem 0 0; text-align: center;">
+                <li style="display: inline; margin: 0 10px;"><a href="index.html"
+                        style="color: white; text-decoration: none; font-weight: bold;">Kezdőlap</a></li>
+                <li style="display: inline; margin: 0 10px;"><a href="about.html"
+                        style="color: white; text-decoration: none; font-weight: bold;">Bemutatkozás</a></li>
+                <li style="display: inline; margin: 0 10px;"><a href="gallery.html"
+                        style="color: white; text-decoration: none; font-weight: bold;">Galéria</a></li>
+                <li style="display: inline; margin: 0 10px;"><a href="form.html"
+                        style="color: white; text-decoration: none; font-weight: bold;">Űrlap</a></li>
+                <li style="display: inline; margin: 0 10px;"><a href="video.html"
+                        style="color: white; text-decoration: none; font-weight: bold;">Videó</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="padding: 20px;">
+        <div style="text-align: center; margin-bottom: 20px;">
+            <h2 style="font-size: 2rem;">Képek a kedvenc filmjeimről és sorozataimról</h2>
+            <p style="font-size: 1rem; color: #555;">Klikk a képekre a nagyobb nézetért!</p>
+        </div>
+        <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 10px;">
+            <a href="images/image1.jpg" target="_blank" style="display: block; text-decoration: none;">
+                <img src="images/image1.jpg" alt="Image 1"
+                    style="width: 100%; border-radius: 10px; transition: transform 0.3s;">
+            </a>
+
+            <a href="images/image2.jpg" target="_blank" style="display: block; text-decoration: none;">
+                <img src="images/image2.jpg" alt="Image 2"
+                    style="width: 100%; border-radius: 10px; transition: transform 0.3s;">
+            </a>
+
+            <a href="images/image3.jpg" target="_blank" style="display: block; text-decoration: none;">
+                <img src="images/image3.jpg" alt="Image 3"
+                    style="width: 100%; border-radius: 10px; transition: transform 0.3s;">
+            </a>
+
+            <a href="images/image4.jpg" target="_blank" style="display: block; text-decoration: none;">
+                <img src="images/image4.jpg" alt="Image 4"
+                    style="width: 100%; border-radius: 10px; transition: transform 0.3s;">
+            </a>
+
+            <a href="images/image5.jpg" target="_blank" style="display: block; text-decoration: none;">
+                <img src="images/image5.jpg" alt="Image 5"
+                    style="width: 100%; border-radius: 10px; transition: transform 0.3s;">
+            </a>
+
+            <a href="images/image6.jpg" target="_blank" style="display: block; text-decoration: none;">
+                <img src="images/image6.jpg" alt="Image 6"
+                    style="width: 100%; border-radius: 10px; transition: transform 0.3s;">
+            </a>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>2024 Kedvenc Filmjeim és Sorozataim</p>
+        <p>Készítette: Rácz László, Neptun-kód: CI880V</p>
+    </footer>
+
+</body>
+
+</html>
