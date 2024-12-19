@@ -49,20 +49,20 @@
     </header>
 
     <main>
-        <form action="#" method="POST" class="form-container">
+        <form action="#" method="POST" class="form-container" name="urlap" id="urlap">
             <h2>Kapcsolatfelvétel</h2>
 
             <!-- Szöveges mező -->
             <label for="name">Név:</label>
-            <input type="text" id="name" name="name" placeholder="Írja be a nevét">
+            <input type="text" id="name" name="name" placeholder="Írja be a nevét" required>
 
             <!-- Többsoros szöveges mező -->
             <label for="message">Üzenet:</label>
-            <textarea id="message" name="message" rows="4" placeholder="Írja be az üzenetét"></textarea>
+            <textarea id="message" name="message" rows="4" placeholder="Írja be az üzenetét" required></textarea>
 
             <!-- Adatlista -->
-            <label for="favorite-film">Kedvenc film:</label>
-            <input list="films" id="favorite-film" name="favorite-film" placeholder="Válasszon vagy írjon be">
+            <label for="favorite-film" >Kedvenc film:</label>
+            <input list="films" id="favorite-film" name="favorite-film" placeholder="Válasszon vagy írjon be" required>
             <datalist id="films">
                 <option value="Star Wars"></option>
                 <option value="Harry Potter"></option>
@@ -72,35 +72,36 @@
 
             <!-- Jelölőnégyzet -->
             <label>Hírlevél:</label>
-            <input type="checkbox" id="newsletter" name="newsletter">
+            <input type="checkbox" id="newsletter" name="newsletter" required>
             <label for="newsletter">Feliratkozás hírlevélre</label>
 
             <!-- Rádiógomb -->
             <label>Kedvenc műfaj:</label>
             <div>
-                <input type="radio" id="action" name="genre" value="action">
+                <input type="radio" id="action" name="genre" value="action" required>
                 <label for="action">Akció</label>
             </div>
             <div>
-                <input type="radio" id="comedy" name="genre" value="comedy">
+                <input type="radio" id="comedy" name="genre" value="comedy" required>
                 <label for="comedy">Vígjáték</label>
             </div>
             <div>
-                <input type="radio" id="drama" name="genre" value="drama">
+                <input type="radio" id="drama" name="genre" value="drama" required>
                 <label for="drama">Dráma</label>
             </div>
 
             <!-- Színválasztó -->
             <label for="color">Kedvenc szín:</label>
-            <input type="color" id="color" name="color">
+            <input type="color" id="color" name="color" required>
 
             <!-- Dátumválasztás -->
             <label for="date">Találkozó dátuma:</label>
-            <input type="date" id="date" name="date">
+            <input type="date" id="date" name="date" required>
 
             <!-- Gombok -->
-            <button type="submit">Küldés</button>
-            <button type="reset">Alaphelyzet</button>
+            <button type="submit" form="urlap">Küldés</button>
+            <button type="submit" form="urlap"formnovalidate>Küldés ellenőrzés nélkül</button>
+            <button type="reset" form="urlap">Alaphelyzet</button>
 
             <!-- Számozott lista -->
             <ol>
